@@ -107,7 +107,7 @@
     max-width: 100%;
     width: 80%;
     border-radius: 8px;
-    background-color: rgba(62, 127, 232, 0.2); /* biru muda transparan */
+    background-color: rgba(62, 127, 232, 0.1); /* biru muda transparan */
     transform: scaleX(1.05);
   }
 
@@ -181,18 +181,23 @@
 
   .about-next {
     flex-direction: column;
-    align-items: center;
-    margin: -220px 40px;
+    align-items: left;
+    margin: -300px 40px;
   }
 
   .about-next p {
-    width: 80%;
-    text-align: center;
-    padding-bottom: 40px;
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 180px;
+  }
+
+  .about-next img {
+    margin: -280px 120px 220px auto;
   }
 
   .half-circle {
-    margin-top: -180px;
+    margin-top: -220px;
     width: 150px;
     height: auto;
   }
@@ -225,8 +230,9 @@
   }
 
   .card-container {
-    padding: 40px;
+    padding: 60px;
     justify-content: center;
+    gap: 40px;
   }
 
   .card-work {
@@ -235,6 +241,9 @@
     margin-bottom: 30px;
   }
 
+  .card-work:hover h2 {
+    inset: auto auto calc(280px + 20px + 16px) 30px;
+  }
   /* Certificate section */
   .certificate {
     padding: 40px;
@@ -277,217 +286,220 @@
 @media all and (min-width: 480px) and (max-width: 768px) {
   /* Navbar adjustments */
   .navbar {
-    padding: 15px 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 8px 20px;
+    flex-direction: column;
+    align-items: left;
   }
 
   .navbar img {
-    margin-bottom: 10px;
+    margin: 15px 0px 20px 20px;
+    width: 240px;
+    height: auto;
+  }
+
+  .navbar-brand {
+    display: flex;
+    width: 100%;
+    align-items: left;
   }
 
   .navbar-menu {
-    order: 3;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    gap: 0;
+    margin: 10px 0px 0px auto;
+  }
+
+  .navbar-menu li {
+    display: flex;
+    padding: 0.1rem auto;
+    align-items: center;
     justify-content: center;
-    gap: 5px;
-    margin-top: 10px;
+    border-radius: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-menu li:hover {
+    margin: 0 auto;
+    padding: auto 0.1rem;
+    max-width: 100%;
+    width: 80%;
+    border-radius: 8px;
+    background-color: rgba(62, 127, 232, 0.1); /* biru muda transparan */
+    transform: scaleX(1.05);
+  }
+
+  .navbar-hamburgerMenu {
+    margin: 10px 20px 0 auto;
+    font-size: 20px;
   }
 
   .tab {
-    padding: 0px 5px;
+    padding: 15px;
   }
 
   .tab a {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .icon-social {
-    gap: 15px;
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 10px auto 0px auto;
+  }
+
+  .icon-link {
+    font-size: 24px;
+  }
+
+  .show-menu {
+    display: flex !important;
+    cursor: pointer;
+  }
+
+  .show-menu:hover {
+    color: #3450f3;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
   }
 
   /* About section */
   .container {
-    margin: 20px;
+    margin: 40px 40px;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .about-img img {
-    max-width: 60%;
+    max-width: 80%;
+    width: 100%;
     margin: 0 auto;
-    display: block;
+    display: flex;
   }
 
   .about-text {
-    margin: 15px 0;
-    line-height: 32px;
+    margin: 10px 0;
+    text-align: left;
   }
 
   .about-text h1 {
-    font-size: 32px;
-    padding-bottom: 10px;
+    font-size: 48px;
     text-align: center;
   }
 
   .about-text p {
     width: 100%;
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .half-circle {
-    display: none;
+    text-align: justify;
+    font-size: 18px;
   }
 
   .about-next {
-    margin: 20px;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    margin: -300px 40px;
   }
 
   .about-next p {
+    font-size: 18px;
     width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
+    text-align: justify;
+    margin-bottom: 180px;
   }
 
   .about-next img {
-    padding: 10px;
+    margin: -280px 120px 220px auto;
+  }
+
+  .half-circle {
+    margin-top: -220px;
+    width: 150px;
+    height: auto;
   }
 
   /* Skill section */
   .skill {
-    margin-top: 60px;
+    margin-top: 140px;
   }
 
   .skill-header h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .skill-header p {
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 18px;
   }
 
   .skill-box {
-    width: 90%;
-    padding: 15px 15px 0px 15px;
-    margin: 30px auto;
-  }
-
-  .skill-container {
-    padding: 15px;
-  }
-
-  .skill-name {
-    width: 120px;
-    font-size: 16px;
+    width: 80%;
+    padding: 20px 20px 0px 20px;
   }
 
   /* Card section */
   .card-header h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .card-header p {
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 18px;
   }
 
   .card-container {
-    padding: 20px;
+    padding: 60px;
+    justify-content: center;
+    gap: 40px;
   }
 
   .card-work {
-    width: 100%;
-    height: 30rem;
+    width: 20rem;
+    height: 32rem;
     margin-bottom: 30px;
   }
 
-  .card-work h2 {
-    inset: auto auto 30px 20px;
+  .card-work:hover h2 {
+    inset: auto auto calc(280px + 20px + 16px) 30px;
   }
-
-  .card-work p {
-    inset: auto auto 55px 20px;
-    font-size: 15px;
-  }
-
   /* Certificate section */
   .certificate {
-    padding: 30px 20px;
+    padding: 40px;
   }
 
   .certificate-header h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .certificate-header p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .certificate-container {
-    gap: 30px;
+    gap: 40px;
   }
 
   .certificate-item {
-    width: 100%;
+    width: 320px;
   }
 
   /* Banner contact */
   .banner-contact img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
   .contact-text h2 {
-    font-size: 22px;
+    font-size: 26px;
     padding: 0 20px;
     text-align: center;
   }
 
   .contact-text {
-    margin-top: 180px;
-  }
-
-  /* Footer */
-  footer {
-    margin-top: 150px;
-  }
-
-  /* tambahan */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-brand {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .icon-social {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .show-menu {
-    display: flex !important;
+    margin-top: 240px;
   }
 }
 
@@ -712,8 +724,12 @@
   }
 
   .card-work h2 {
-    inset: auto auto 30px 15px;
+    inset: auto auto 30px 20px;
     font-size: 20px;
+  }
+
+  .card-work:hover h2 {
+    inset: auto auto calc(180px + 20px + 16px) 15px;
   }
 
   .card-work p {
