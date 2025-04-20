@@ -3,355 +3,365 @@
   <head>
     <title>Portoasep</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
     <link href="responsive.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar">
-      <div class="navbar-brand">
-        <img
-          class="img"
-          src="https://c.animaapp.com/laWroyVr/img/logo.png"
-          alt="Logo"
-        />
-        <div class="navbar-hamburgerMenu">
-          <!-- <a href="#" id="hamburger-menu"><i class="fa fa-bars"></i></a> -->
-          <button
-            class="menu"
-            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-            aria-label="Main Menu"
-            id="hamburger-menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 100 100">
-              <path
-                class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-              />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path
-                class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="navbar-menu">
-        <li class="tab"><a href="#about">About Me</a></li>
-        <li class="tab"><a href="#skill">Skill&nbsp;&nbsp;Framework</a></li>
-        <li class="tab"><a href="#work">Recent Work</a></li>
-        <li class="tab"><a href="#certificate">My Certificate</a></li>
-      </div>
-
-      <div class="icon-social">
-        <li>
-          <a
-            href="https://www.instagram.com/wjcbayy/"
-            class="icon-link"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
-            class="icon-link"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Wissasono11"
-            class="icon-link"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-      </div>
-    </nav>
-    <!-- navbar -->
-
-    <!-- about me -->
-    <section class="about-me" id="about">
-      <div class="container">
-        <div class="about-img">
-          <img src="assets/img/gw.png" alt="Bayu Wicaksono" />
-        </div>
-
-        <div class="about-text">
-          <h1 class="text">Hi I'm <span>Bayu👋🏻</span></h1>
-          <p class="text">
-            Building the Future, One Line of Code at a Time - Let’s explore the
-            world of coding and AI together. The Undergraduate Student of
-            Informatics Engineering at UIN Sunan Kalijaga Yogyakarta. I'm a
-            person that interested in technology, especially in web development
-            and AI.
-          </p>
-          <button class="btn-primary">
-            <a
-              href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
-              class="btn"
-              target="_blank"
-              >Let’s Connect</a
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img
+            alt="Logo"
+            class="img"
+            src="https://c.animaapp.com/laWroyVr/img/logo.png"
+          />
+          <div class="navbar-hamburgerMenu">
+            <!-- <a href="#" id="hamburger-menu"><i class="fa fa-bars"></i></a> -->
+            <button
+              aria-label="Main Menu"
+              class="menu"
+              id="hamburger-menu"
+              onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
             >
-          </button>
-        </div>
-      </div>
-
-      <div class="about-box">
-        <div class="half-circle">
-          <img src="assets/img/Lingkaran.png" alt="gelombang" />
-        </div>
-        <div class="about-next">
-          <p>
-            I’m a <strong>software engineer</strong> with expertise in
-            developing scalable, high-performance applications. With a strong
-            foundation in <strong>front-end</strong> developer, I enjoy crafting
-            solutions that are as elegant as they are effective
-          </p>
-          <img src="assets/img/VectorStar.png" alt="star" />
-        </div>
-
-        <div class="star">
-          <img src="assets/img/VectorStar.png" alt="star" />
-        </div>
-      </div>
-    </section>
-    <!-- about me -->
-
-    <!-- skill framework -->
-    <section class="skill" id="skill">
-      <div class="skill-header">
-        <h2>Skills & Frameworks</h2>
-        <p>Here are the frameworks that I usually use to create UI websites:</p>
-      </div>
-
-      <div class="skill-box">
-        <div class="skill-container">
-          <div class="skill-item">
-            <div class="skill-icon">
-              <img src="assets/svg/boostraps.svg" alt="Bootstrap" />
-            </div>
-            <div class="skill-name">
-              <p>Bootstrap</p>
-            </div>
-            <div class="progress-bar">
-              <div class="progress boostraps-progress"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <img src="assets/svg/laravel.svg" alt="Laravel" />
-            </div>
-            <div class="skill-name">
-              <p>Laravel</p>
-            </div>
-            <div class="progress-bar">
-              <div class="progress laravel-progress"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <img src="assets/svg/tailwindcss.svg" alt="Tailwind CSS" />
-            </div>
-            <div class="skill-name">
-              <p>Tailwind CSS</p>
-            </div>
-            <div class="progress-bar">
-              <div class="progress tailwindcss-progress"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <img src="assets/svg/wordpress.svg" alt="WordPress" />
-            </div>
-            <div class="skill-name">
-              <p>WordPress</p>
-            </div>
-            <div class="progress-bar">
-              <div class="progress wordpress-progress"></div>
-            </div>
+              <svg height="20" viewbox="0 0 100 100" width="20">
+                <path
+                  class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                ></path>
+                <path class="line line2" d="M 20,50 H 80"></path>
+                <path
+                  class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                ></path>
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- skill framework -->
+        <div class="navbar-menu">
+          <li class="tab">
+            <a href="#about"> About Me </a>
+          </li>
+          <li class="tab">
+            <a href="#skill"> Skill Framework </a>
+          </li>
+          <li class="tab">
+            <a href="#work"> Recent Work </a>
+          </li>
+          <li class="tab">
+            <a href="#certificate"> My Certificate </a>
+          </li>
+        </div>
+        <div class="icon-social">
+          <li>
+            <a
+              class="icon-link"
+              href="https://www.instagram.com/wjcbayy/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"> </i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"> </i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="icon-link"
+              href="https://github.com/Wissasono11"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"> </i>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </header>
 
     <!-- recent work -->
-    <section class="card" id="work">
-      <div class="card-header">
-        <h2>Recent Work</h2>
-        <p>Projects I've been working on lately with HTML and CSS:</p>
-      </div>
-
-      <div class="card-container">
-        <div class="card-work">
-          <img
-            src="https://images.unsplash.com/photo-1620820186187-fc32e79adb74?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
-            alt=""
-          />
-          <div class="card-content">
-            <h2>Kopi Kenangan Senja</h2>
-            <p>
-              Kopi Kenangan Senja is a website built with HTML, CSS, and
-              Javascript. This website already supports responsive for mobile.
-              This coffee shop offers a variety of coffee drinks and snacks. It
-              has a cozy atmosphere and is suitable for relaxing or working. The
-              menu includes a variety of coffee drinks, from classic espresso to
-              unique concoctions.
-            </p>
-            <a
-              href="https://wissasono11.github.io/kopi-kenangan-senja/"
-              class="button"
-              target="_blank"
-            >
-              Find out more
-              <span class="material-symbols-outlined"
-                ><i class="fa-solid fa-arrow-right-long"></i
-              ></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="card-work">
-          <img
-            src="https://images.unsplash.com/photo-1596003906949-67221c37965c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
-          <div class="card-content">
-            <h2>Urplann.</h2>
-            <p>
-              Urplann. is a website designed to support your productivity and
-              help you stay organized. This website includes features such as a
-              task list or to-do list, a pomodoro timer to enhance focus, and
-              integration with the Spotify API for a personalized experience.
-              Built with HTML, CSS, and Javascript, this website support for
-              responsivibility on mobile devices.
-            </p>
-            <a
-              href="https://wissasono11.github.io/podo-list/"
-              class="button"
-              target="_blank"
-            >
-              Find out more
-              <span class="material-symbols-outlined"
-                ><i class="fa-solid fa-arrow-right-long"></i
-              ></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="card-work">
-          <img
-            src="https://images.unsplash.com/photo-1611638281871-1063d3e76e1f?q=80&w=2633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
-          <div class="card-content">
-            <h2>Bandung Project</h2>
-            <p>
-              This website provides historical information about Bandung,
-              focusing specifically on its iconic and historic buildings. It
-              offers a detailed look into the rich cultural heritage of the
-              city, making it an excellent resource for history enthusiasts. The
-              website is fully responsive, ensuring a seamless experience on
-              mobile devices. Built using HTML and CSS.
-            </p>
-            <a
-              href="https://wissasono11.github.io/Bandung-Project/"
-              class="button"
-              target="_blank"
-            >
-              Find out more
-              <span class="material-symbols-outlined"
-                ><i class="fa-solid fa-arrow-right-long"></i
-              ></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Certificate -->
-    <section class="certificate" id="certificate">
-      <div class="certificate-header">
-        <h2>My Certificate</h2>
-        <p>Here are some of the certifications I have achieved:</p>
-      </div>
-
-      <div class="certificate-container">
-        <div class="certificate-item">
-          <a href="https://www.codepolitan.com/c/V5PF0ES/" target="_blank">
-            <img src="assets/img/sertifikat1.png" alt="Certificate 1" />
-          </a>
-          <p>Belajar Bootstrap CSS Framework</p>
-        </div>
-
-        <div class="certificate-item">
-          <a href="https://www.codepolitan.com/c/B3QKSQG/" target="_blank">
-            <img src="assets/img/sertifikat2.png" alt="Certificate 2" />
-          </a>
-          <p>Belajar Dasar CSS</p>
-        </div>
-
-        <div class="certificate-item">
-          <a href="https://www.codepolitan.com/c/IICUHMS/" target="_blank">
-            <img src="assets/img/sertifikat4.png" alt="Certificate 3" />
-          </a>
-          <p>Membuat Halaman Website Portofolio Menggunakan Tailwind CSS</p>
-        </div>
-
-        <div class="certificate-item">
-          <a href="https://www.codepolitan.com/c/1VOGJ7T/" target="_blank">
-            <img src="assets/img/sertifikat3.png" alt="Certificate 4" />
-          </a>
-          <p>Belajar Dasar HTML</p>
-        </div>
-      </div>
-    </section>
 
     <!-- contact us -->
-    <section>
-      <div class="banner-contact">
-        <img src="assets/img/BannerContact.png" alt="BannerContact" />
-        <div class="contact-text">
-          <h2>Lets Build Something Impactful Together</h2>
-          <button class="btn-primary">
-            <a
-              href="https://api.whatsapp.com/send/?phone=%2B6285252171114&text&type=phone_number&app_absent=0"
-              class="btn"
-              target="_blank"
-              >Send a Message
-            </a>
-          </button>
+    <!-- footer -->
+
+    <main>
+      <!-- about me -->
+      <section class="about-me" id="about">
+        <div class="container">
+          <div class="about-img">
+            <img alt="Bayu Wicaksono" src="assets/img/gw.png" />
+          </div>
+          <div class="about-text">
+            <h1 class="text">
+              Hi I'm
+              <span> Bayu👋🏻 </span>
+            </h1>
+            <p class="text">
+              Building the Future, One Line of Code at a Time - Let’s explore
+              the world of coding and AI together. The Undergraduate Student of
+              Informatics Engineering at UIN Sunan Kalijaga Yogyakarta. I'm a
+              person that interested in technology, especially in web
+              development and AI.
+            </p>
+            <button class="btn-primary">
+              <a
+                class="btn"
+                href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
+                target="_blank"
+              >
+                Let’s Connect
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+        <div class="about-box">
+          <div class="half-circle">
+            <img alt="gelombang" src="assets/img/Lingkaran.png" />
+          </div>
+          <div class="about-next">
+            <p>
+              I’m a
+              <strong> software engineer </strong>
+              with expertise in developing scalable, high-performance
+              applications. With a strong foundation in
+              <strong> front-end </strong>
+              developer, I enjoy crafting solutions that are as elegant as they
+              are effective
+            </p>
+            <img alt="star" src="assets/img/VectorStar.png" />
+          </div>
+          <div class="star">
+            <img alt="star" src="assets/img/VectorStar.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- skill framework -->
+      <section class="skill" id="skill">
+        <div class="skill-header">
+          <h2>Skills &amp; Frameworks</h2>
+          <p>
+            Here are the frameworks that I usually use to create UI websites:
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-container">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img alt="Bootstrap" src="assets/svg/boostraps.svg" />
+              </div>
+              <div class="skill-name">
+                <p>Bootstrap</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress boostraps-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img alt="Laravel" src="assets/svg/laravel.svg" />
+              </div>
+              <div class="skill-name">
+                <p>Laravel</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress laravel-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img alt="Tailwind CSS" src="assets/svg/tailwindcss.svg" />
+              </div>
+              <div class="skill-name">
+                <p>Tailwind CSS</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress tailwindcss-progress"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img alt="WordPress" src="assets/svg/wordpress.svg" />
+              </div>
+              <div class="skill-name">
+                <p>WordPress</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress wordpress-progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- recent work -->
+      <section class="card" id="work">
+        <div class="card-header">
+          <h2>Recent Work</h2>
+          <p>Projects I've been working on lately with HTML and CSS:</p>
+        </div>
+        <div class="card-container">
+          <div class="card-work">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1620820186187-fc32e79adb74?q=80&amp;w=2572&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
+            />
+            <div class="card-content">
+              <h2>Kopi Kenangan Senja</h2>
+              <p>
+                Kopi Kenangan Senja is a website built with HTML, CSS, and
+                Javascript. This website already supports responsive for mobile.
+                This coffee shop offers a variety of coffee drinks and snacks.
+                It has a cozy atmosphere and is suitable for relaxing or
+                working. The menu includes a variety of coffee drinks, from
+                classic espresso to unique concoctions.
+              </p>
+              <a
+                class="button"
+                href="https://wissasono11.github.io/kopi-kenangan-senja/"
+                target="_blank"
+              >
+                Find out more
+                <span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-right-long"> </i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="card-work">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1596003906949-67221c37965c?q=80&amp;w=2574&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="card-content">
+              <h2>Urplann.</h2>
+              <p>
+                Urplann. is a website designed to support your productivity and
+                help you stay organized. This website includes features such as
+                a task list or to-do list, a pomodoro timer to enhance focus,
+                and integration with the Spotify API for a personalized
+                experience. Built with HTML, CSS, and Javascript, this website
+                support for responsivibility on mobile devices.
+              </p>
+              <a
+                class="button"
+                href="https://wissasono11.github.io/podo-list/"
+                target="_blank"
+              >
+                Find out more
+                <span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-right-long"> </i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="card-work">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1611638281871-1063d3e76e1f?q=80&amp;w=2633&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <div class="card-content">
+              <h2>Bandung Project</h2>
+              <p>
+                This website provides historical information about Bandung,
+                focusing specifically on its iconic and historic buildings. It
+                offers a detailed look into the rich cultural heritage of the
+                city, making it an excellent resource for history enthusiasts.
+                The website is fully responsive, ensuring a seamless experience
+                on mobile devices. Built using HTML and CSS.
+              </p>
+              <a
+                class="button"
+                href="https://wissasono11.github.io/Bandung-Project/"
+                target="_blank"
+              >
+                Find out more
+                <span class="material-symbols-outlined">
+                  <i class="fa-solid fa-arrow-right-long"> </i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Certificate -->
+      <section class="certificate" id="certificate">
+        <div class="certificate-header">
+          <h2>My Certificate</h2>
+          <p>Here are some of the certifications I have achieved:</p>
+        </div>
+        <div class="certificate-container">
+          <div class="certificate-item">
+            <a href="https://www.codepolitan.com/c/V5PF0ES/" target="_blank">
+              <img alt="Certificate 1" src="assets/img/sertifikat1.png" />
+            </a>
+            <p>Belajar Bootstrap CSS Framework</p>
+          </div>
+          <div class="certificate-item">
+            <a href="https://www.codepolitan.com/c/B3QKSQG/" target="_blank">
+              <img alt="Certificate 2" src="assets/img/sertifikat2.png" />
+            </a>
+            <p>Belajar Dasar CSS</p>
+          </div>
+          <div class="certificate-item">
+            <a href="https://www.codepolitan.com/c/IICUHMS/" target="_blank">
+              <img alt="Certificate 3" src="assets/img/sertifikat4.png" />
+            </a>
+            <p>Membuat Halaman Website Portofolio Menggunakan Tailwind CSS</p>
+          </div>
+          <div class="certificate-item">
+            <a href="https://www.codepolitan.com/c/1VOGJ7T/" target="_blank">
+              <img alt="Certificate 4" src="assets/img/sertifikat3.png" />
+            </a>
+            <p>Belajar Dasar HTML</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact us -->
+      <section>
+        <div class="banner-contact">
+          <img alt="BannerContact" src="assets/img/BannerContact.png" />
+          <div class="contact-text">
+            <h2>Lets Build Something Impactful Together</h2>
+            <button class="btn-primary">
+              <a
+                class="btn"
+                href="https://api.whatsapp.com/send/?phone=%2B6285252171114&amp;text&amp;type=phone_number&amp;app_absent=0"
+                target="_blank"
+              >
+                Send a Message
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>
-      <p>Portoasep Copyright &copy; 2025 All Rights Reserved.</p>
+      <p>Portoasep Copyright © 2025 All Rights Reserved.</p>
     </footer>
 
     <!-- script js -->
