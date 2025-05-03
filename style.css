@@ -37,8 +37,11 @@ section {
   justify-content: space-between;
   padding: 20px 80px;
   margin: 0px auto;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 90%;
   background-color: transparent;
   backdrop-filter: blur(10px);
   z-index: 1000;
