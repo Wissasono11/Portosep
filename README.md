@@ -1,6 +1,6 @@
 # 🌟 Asep Verstappen - Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://wissasono11.github.io/Portosep/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://portosep.netlify.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Wissasono11/Portosep)
 
 > Modern portfolio website showcasing frontend development skills with glassmorphism design and smooth animations. **Optimized for desktop viewing**.
@@ -12,7 +12,7 @@ This is a personal portfolio website built to showcase frontend development skil
 **⚠️ Note: This portfolio is optimized for desktop browsers and may not display properly on mobile devices.**
 
 ## ✨ Live Demo
-Visit the website: [Asep Verstappen Portfolio](https://wissasono11.github.io/Portosep/)
+Visit the website: [Asep Verstappen Portfolio](https://portosep.netlify.app/)
 
 ## 🚀 Features
 
