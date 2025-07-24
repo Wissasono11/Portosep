@@ -12,7 +12,7 @@ This is a personal portfolio website built to showcase frontend development skil
 **⚠️ Note: This portfolio is optimized for desktop browsers and may not display properly on mobile devices.**
 
 ## ✨ Live Demo
-Visit the website: [Asep Verstappen Portfolio](https://wissasono11.github.io/Portosep/)
+Visit the website: [Asep Verstappen Portfolio](portosep.netlify.app)
 
 ## 🚀 Features
 
