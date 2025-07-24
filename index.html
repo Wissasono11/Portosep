@@ -1,382 +1,1005 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portoasep</title>
+    <title>Asep verstappen - Portofolio</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+
+      <!-- Custom Styles -->
     <link href="style.css" rel="stylesheet" />
     <link href="responsive.css" rel="stylesheet" />
+
   </head>
   <body>
     <!-- navbar -->
     <header>
       <nav class="navbar">
+        <div class="navbar-menu-left">
+          <li class="tab active">
+            <a href="#home">Home</a>
+          </li>
+          <li class="tab">
+            <a href="#services">Services</a>
+          </li>
+          <li class="tab">
+            <a href="#about">About</a>
+          </li>
+        </div>
+
         <div class="navbar-brand">
           <img
             alt="Logo"
             class="img"
-            src="https://c.animaapp.com/laWroyVr/img/logo.png"
-          />
+            src="assets/img/AV.png" />
           <div class="navbar-hamburgerMenu">
-            <!-- <a href="#" id="hamburger-menu"><i class="fa fa-bars"></i></a> -->
             <button
               aria-label="Main Menu"
               class="menu"
               id="hamburger-menu"
-              onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-            >
+              onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
               <svg height="20" viewbox="0 0 100 100" width="20">
                 <path
                   class="line line1"
-                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-                ></path>
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
                 <path class="line line2" d="M 20,50 H 80"></path>
                 <path
                   class="line line3"
-                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-                ></path>
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
               </svg>
             </button>
           </div>
         </div>
 
-        <div class="navbar-menu">
+        <div class="navbar-menu-right">
           <li class="tab">
-            <a href="#about"> About Me </a>
-          </li>
-          <li class="tab">
-            <a href="#skill"> Skill Framework </a>
+            <a href="#project">Project</a>
           </li>
           <li class="tab">
-            <a href="#work"> Recent Work </a>
+            <a href="#certificate">Certificate</a>
           </li>
           <li class="tab">
-            <a href="#certificate"> My Certificate </a>
-          </li>
-        </div>
-
-        <div class="icon-social">
-          <li>
-            <a
-              class="icon-link"
-              href="https://www.instagram.com/wjcbayy/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram"> </i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="icon-link"
-              href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"> </i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="icon-link"
-              href="https://github.com/Wissasono11"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"> </i>
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </div>
       </nav>
     </header>
-
+    
     <main>
-      <!-- about me -->
-      <section class="about-me" id="about">
-        <article class="container">
-          <aside class="about-img">
-            <img alt="Bayu Wicaksono" src="assets/img/profile.png" />
-          </aside>
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <!-- Mouse Trail Container -->
+        <div class="mouse-trail-container"></div>
+        
+        <div class="hero-container">
 
-          <article class="about-text">
-            <h1 class="text">
-              Hi I'm
-              <span> Bayu👋🏻 </span>
+          <!-- Quote Box Left -->
+          <div class="quote-box">
+            <div class="quote-icon"><svg width="36" height="36"
+                viewBox="0 0 36 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.135 17.445H5.1C5.22 10.44 6.6 9.28499 10.905 6.73499C11.4 6.43499 11.565 5.80499 11.265 5.29499C10.98 4.79999 10.335 4.63499 9.84 4.93499C4.77 7.93499 3 9.76499 3 18.48V26.565C3 29.13 5.085 31.2 7.635 31.2H12.135C14.775 31.2 16.77 29.205 16.77 26.565V22.065C16.77 19.44 14.775 17.445 12.135 17.445Z"
+                  fill="#344054" />
+                <path
+                  d="M28.365 17.445H21.33C21.45 10.44 22.83 9.28499 27.135 6.73499C27.63 6.43499 27.795 5.80499 27.495 5.29499C27.195 4.79999 26.565 4.63499 26.055 4.93499C20.985 7.93499 19.215 9.76499 19.215 18.495V26.58C19.215 29.145 21.3 31.215 23.85 31.215H28.35C30.99 31.215 32.985 29.22 32.985 26.58V22.08C33 19.44 31.005 17.445 28.365 17.445Z"
+                  fill="#344054" />
+              </svg>
+            </div>
+            <p>Bayu combines technical expertise with creative vision, crafting digital experiences that captivate users and drive business success.</p>
+          </div>
+
+          <!-- Main Content Center -->
+          <div class="hero-main-center">
+            <!-- Hello Bubble -->
+            <div class="hello-bubble">
+              <span>Hello!</span>
+            </div>
+
+            <!-- Hero Title -->
+            <h1 class="hero-title-main">
+              I'm <span class="name-highlight">Bayu,</span><br>
+              <span class="role-text">Frontend Enthusiast</span>
             </h1>
-            <p class="text">
-              Building the Future, One Line of Code at a Time - Let’s explore
-              the world of coding and AI together. The Undergraduate Student of
-              Informatics Engineering at UIN Sunan Kalijaga Yogyakarta. I'm a
-              person that interested in technology, especially in web
-              development and AI.
-            </p>
-            <button class="btn-primary">
-              <a
-                class="btn"
-                href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/"
-                target="_blank"
-              >
-                Let’s Connect
-              </a>
-            </button>
-          </article>
-        </article>
 
-        <article class="about-box">
-          <div class="half-circle">
-            <img alt="gelombang" src="assets/img/Lingkaran.png" />
-          </div>
+            <!-- Hero Image -->
+            <div class="hero-image-center" data-tilt>
+              <div class="hero-image-inner">
+                <img alt="Bayu Wicaksono" src="assets/img/heroProfile.png" />
+                <!-- Hero Buttons positioned over the image -->
+                <div class="hero-buttons-overlay">
+                  <a class="btn-glass-blue portfolio-btn" href="#project">
+                    <span>Portofolio</span>
+                    <svg width="20" height="20" viewBox="0 0 43 42" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.75 29.75L30.25 12.25" stroke="white"
+                        stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M12.75 12.25H30.25V29.75" stroke="white"
+                        stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                  <a class="btn-glass-transparent hire-btn" href="https://www.linkedin.com/in/bayu-wicaksono-a08391282/" target="_blank">
+                    <span>Hire me</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          <article class="about-next">
-            <p>
-              I’m a
-              <strong> software engineer </strong>
-              with expertise in developing scalable, high-performance
-              applications. With a strong foundation in
-              <strong> front-end </strong>
-              developer, I enjoy crafting solutions that are as elegant as they
-              are effective
-            </p>
-            <img alt="star" src="assets/img/VectorStar.png" />
-          </article>
-          <div class="star">
-            <img alt="star" src="assets/img/VectorStar.png" />
+            <!-- Experience Box Right -->
+            <div class="experience-box">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="experience-number">2 Years</div>
+              <div class="experience-label">Experience</div>
+            </div>
+
+            <!-- Decorative Lines -->
+            <div class="decorative-line decorative-line-1"></div>
+            <div class="decorative-line decorative-line-2"></div>
+            <div class="decorative-square decorative-square-1"></div>
+            <div class="decorative-square decorative-square-2"></div>
           </div>
-        </article>
+        </div>
+
       </section>
 
-      <!-- skill framework -->
-      <section class="skill" id="skill">
-        <article class="skill-header">
-          <h2>Skills &amp; Frameworks</h2>
-          <p>
-            Here are the frameworks that I usually use to create UI websites:
-          </p>
-        </article>
-
-        <article class="skill-box">
-          <article class="skill-container">
-            <div class="skill-item">
-              <div class="skill-icon">
+      <!-- Tech Stack Slider -->
+      <header class="tech-slider-header"><p>Tech Stack</p>
+        <section class="tech-slider-section">
+          <div class="tech-slider-container">
+            <div class="tech-slider">
+              <!-- First set of tech stack items -->
+              <div class="tech-slide">
+                <img alt="HTML5" src="assets/svg/html.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="CSS3" src="assets/svg/css.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="JavaScript" src="assets/svg/js.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="React" src="assets/svg/react.svg" />
+              </div>
+              <div class="tech-slide">
                 <img alt="Bootstrap" src="assets/svg/boostraps.svg" />
               </div>
-
-              <div class="skill-name">
-                <p>Bootstrap</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress boostraps-progress"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon">
-                <img alt="Laravel" src="assets/svg/laravel.svg" />
-              </div>
-              <div class="skill-name">
-                <p>Laravel</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress laravel-progress"></div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-icon">
+              <div class="tech-slide">
                 <img alt="Tailwind CSS" src="assets/svg/tailwindcss.svg" />
               </div>
-              <div class="skill-name">
-                <p>Tailwind CSS</p>
+              <div class="tech-slide">
+                <img alt="HTML5" src="assets/svg/html.svg" />
               </div>
-              <div class="progress-bar">
-                <div class="progress tailwindcss-progress"></div>
+              <div class="tech-slide">
+                <img alt="CSS3" src="assets/svg/css.svg" />
+              </div>
+
+              <!-- Duplicate set for seamless infinite loop -->
+              <div class="tech-slide">
+                <img alt="React" src="assets/svg/react.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="Bootstrap" src="assets/svg/boostraps.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="Tailwind CSS" src="assets/svg/tailwindcss.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="HTML5" src="assets/svg/html.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="CSS3" src="assets/svg/css.svg" />
+              </div>
+
+              <!-- Duplicate set for seamless infinite loop -->
+              <div class="tech-slide">
+                <img alt="React" src="assets/svg/react.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="Bootstrap" src="assets/svg/boostraps.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="Tailwind CSS" src="assets/svg/tailwindcss.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="HTML5" src="assets/svg/html.svg" />
+              </div>
+              <div class="tech-slide">
+                <img alt="CSS3" src="assets/svg/css.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <!-- My Services Section -->
+      <section class="services-section" id="services">
+        <div class="services-container">
+          <!-- Background decorative elements -->
+          <div class="services-bg-shape services-bg-shape-1"></div>
+          <div class="services-bg-shape services-bg-shape-2"></div>
+          <div class="services-bg-shape services-bg-shape-3"></div>
+
+          <!-- Services Header -->
+          <div class="services-header">
+            <h2>My <span class="services-highlight">Services</span></h2>
+            <p>Transforming ideas into exceptional digital experiences. I specialize in creating user-friendly, responsive, and visually stunning web solutions that help businesses thrive in the digital world.</p>
+          </div>
+
+          <!-- Services Cards Container -->
+          <div class="services-cards-container">
+            <!-- UI/UX Design Card -->
+            <div class="service-card" data-tilt>
+              <div class="service-card-inner">
+                <div class="service-card-header">
+                  <h3>UI/ UX Design</h3>
+                </div>
+                <div class="service-card-preview">
+                  <img src="assets/img/tasksep.png"
+                    alt="UI/UX Design Preview" />
+                </div>
+                <div class="service-card-action">
+                  <a class="service-arrow-btn" href="#project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                        stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="skill-item">
-              <div class="skill-icon">
-                <img alt="WordPress" src="assets/svg/wordpress.svg" />
-              </div>
-              <div class="skill-name">
-                <p>WordPress</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress wordpress-progress"></div>
+            <!-- Web Design Card -->
+            <div class="service-card" data-tilt>
+              <div class="service-card-inner">
+                <div class="service-card-header">
+                  <h3>Web Design</h3>
+                </div>
+                <div class="service-card-preview">
+                  <img src="assets/img/kenanganSenja.png"
+                    alt="Web Design Preview" />
+                </div>
+                <div class="service-card-action">
+                  <a class="service-arrow-btn" href="#project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                        stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </article>
-        </article>
+
+            <!-- Landing Page Card -->
+            <div class="service-card" data-tilt>
+              <div class="service-card-inner">
+                <div class="service-card-header">
+                  <h3>Landing Page</h3>
+                </div>
+                <div class="service-card-preview">
+                  <img src="assets/img/sukaCanteen.png"
+                    alt="Landing Page Preview" />
+                </div>
+                <div class="service-card-action">
+                  <a class="service-arrow-btn" href="#project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                        stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- recent work -->
-      <section class="card" id="work">
-        <article class="card-header">
-          <h2>Recent Work</h2>
-          <p>Projects I've been working on lately with HTML and CSS:</p>
-        </article>
-
-        <article class="card-container">
-          <article class="card-work">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1620820186187-fc32e79adb74?q=80&amp;w=2572&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
-            />
-            <div class="card-content">
-              <h2>Kopi Kenangan Senja</h2>
-              <p>
-                Kopi Kenangan Senja is a website built with HTML, CSS, and
-                Javascript. This website already supports responsive for mobile.
-                This coffee shop offers a variety of coffee drinks and snacks.
-                It has a cozy atmosphere and is suitable for relaxing or
-                working. The menu includes a variety of coffee drinks, from
-                classic espresso to unique concoctions.
+      <!-- About Me Section -->
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>About <span class="about-highlight">Me</span></h2>
+              <p class="about-description">
+                Hi, I'm Bayu Wicaksono, a passionate Frontend Developer with 2
+                years of experience in creating engaging and user-friendly web
+                experiences. I specialize in modern web technologies and enjoy
+                turning creative ideas into functional and responsive websites.
+                I am currently pursuing a bachelor's degree in computer science
+                at UIN Sunan Kalijaga.
               </p>
-              <a
-                class="button"
-                href="https://wissasono11.github.io/kopi-kenangan-senja/"
-                target="_blank"
-              >
-                Find out more
-                <span class="material-symbols-outlined">
-                  <i class="fa-solid fa-arrow-right-long"> </i>
-                </span>
-              </a>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">2+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+              </div>
+              <div class="about-skills">
+                <h3>What I Do Best</h3>
+                <ul class="skills-list">
+                  <li>Responsive Web Design</li>
+                  <li>Frontend Development</li>
+                  <li>UI/UX Implementation</li>
+                  <li>Modern JavaScript</li>
+                </ul>
+              </div>
             </div>
-          </article>
+            <div class="about-image">
+              <div class="about-image-wrapper" data-tilt>
+                <img src="assets/img/aboutProfile.png"
+                  alt="Bayu Wicaksono - About Profile" />
+                <div class="about-image-overlay">
+                  <div class="overlay-text">Asep Verstappen</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <article class="card-work">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1596003906949-67221c37965c?q=80&amp;w=2574&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-            <div class="card-content">
-              <h2>Urplann.</h2>
-              <p>
-                Urplann. is a website designed to support your productivity and
-                help you stay organized. This website includes features such as
-                a task list or to-do list, a pomodoro timer to enhance focus,
-                and integration with the Spotify API for a personalized
-                experience. Built with HTML, CSS, and Javascript, this website
-                support for responsivibility on mobile devices.
-              </p>
-              <a
-                class="button"
-                href="https://wissasono11.github.io/podo-list/"
-                target="_blank"
-              >
-                Find out more
-                <span class="material-symbols-outlined">
-                  <i class="fa-solid fa-arrow-right-long"> </i>
-                </span>
-              </a>
-            </div>
-          </article>
+      <!-- Projects Section -->
+      <section class="projects-section" id="project">
+        <div class="projects-container">
+          <div class="projects-header">
+            <h2>My <span class="projects-highlight">Projects</span></h2>
+            <p>Showcase of my recent work and development projects</p>
+          </div>
 
-          <article class="card-work">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1611638281871-1063d3e76e1f?q=80&amp;w=2633&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-            <div class="card-content">
-              <h2>Bandung Project</h2>
-              <p>
-                This website provides historical information about Bandung,
-                focusing specifically on its iconic and historic buildings. It
-                offers a detailed look into the rich cultural heritage of the
-                city, making it an excellent resource for history enthusiasts.
-                The website is fully responsive, ensuring a seamless experience
-                on mobile devices. Built using HTML and CSS.
-              </p>
-              <a
-                class="button"
-                href="https://wissasono11.github.io/Bandung-Project/"
-                target="_blank"
-              >
-                Find out more
-                <span class="material-symbols-outlined">
-                  <i class="fa-solid fa-arrow-right-long"> </i>
-                </span>
-              </a>
+          <!-- Projects Slider Container -->
+          <div class="projects-slider-wrapper">
+            <!-- Navigation Buttons -->
+            <button class="projects-nav-btn projects-prev-btn"
+              onclick="slideProjects('prev')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <div class="projects-slider-container">
+              <div class="projects-slider" id="projectsSlider">
+                <!-- Project Card 1 -->
+                 <div class="project-card" data-tilt>
+                  <div class="project-image">
+                    <img src="assets/img/realwindPorto.png"
+                      alt="Kopi Kenangan Senja" />
+                    <div class="project-overlay">
+                      <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">React JS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Realwind Portofolio</h3>
+                    <p>Portofolio project that inspired by pinterest design and implemented with Tailwind and React.</p>
+                    <div class="project-links">
+                      <a
+                        href="https://realwind-portofolio.netlify.app/"
+                        target="_blank" class="project-link-btn primary">
+                        <span>Live Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="https://github.com/Wissasono11/RealWind-Portofolio" target="_blank" class="project-link-btn secondary">
+                        <span>GitHub</span>
+                        <svg width="24" height="24" viewBox="0 0 57 56"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.4694 12.8284C19.8313 12.8284 12.8268 19.7928 12.8268 28.384C12.8268 35.257 17.3089 41.0879 23.5242 43.1448C24.3059 43.2888 24.593 42.8074 24.593 42.3965C24.593 42.0256 24.5784 40.8001 24.5718 39.5003C20.2199 40.4413 19.3016 37.665 19.3016 37.665C18.5901 35.8669 17.5648 35.3889 17.5648 35.3889C16.1456 34.4234 17.6718 34.4432 17.6718 34.4432C19.2426 34.553 20.0697 36.0463 20.0697 36.0463C21.4649 38.4244 23.7291 37.7368 24.6217 37.3395C24.762 36.3339 25.1675 35.6478 25.6148 35.2594C22.1405 34.8659 18.488 33.5321 18.488 27.5716C18.488 25.8734 19.0991 24.4857 20.0998 23.3963C19.9373 23.0045 19.402 21.4224 20.2513 19.2797C20.2513 19.2797 21.5648 18.8616 24.5541 20.8742C25.8018 20.5294 27.14 20.3567 28.4694 20.3508C29.7987 20.3567 31.1379 20.5294 32.3881 20.8742C35.3738 18.8616 36.6855 19.2797 36.6855 19.2797C37.5369 21.4224 37.0013 23.0045 36.8388 23.3963C37.8417 24.4857 38.4487 25.8733 38.4487 27.5716C38.4487 33.5462 34.7893 34.8619 31.3061 35.2469C31.8672 35.7297 32.3671 36.6764 32.3671 38.1276C32.3671 40.2089 32.3489 41.8841 32.3489 42.3965C32.3489 42.8104 32.6305 43.2955 33.4235 43.1428C39.6354 41.0835 44.1118 35.2547 44.1118 28.384C44.1118 19.7928 37.1082 12.8284 28.4694 12.8284Z"
+                            fill="#161614" />
+                            <path
+                            d="M18.6854 34.9878C18.6511 35.065 18.5287 35.0882 18.4174 35.0352C18.3039 34.9845 18.2401 34.8791 18.2769 34.8015C18.3107 34.7219 18.4331 34.6997 18.5463 34.7532C18.66 34.8038 18.7248 34.9102 18.6854 34.9878ZM19.4549 35.6705C19.3803 35.7393 19.2344 35.7073 19.1354 35.5986C19.0331 35.4902 19.014 35.3452 19.0897 35.2753C19.1666 35.2067 19.3081 35.2387 19.4106 35.3473C19.5129 35.457 19.5328 35.6011 19.4548 35.6706L19.4549 35.6705ZM19.9828 36.544C19.8869 36.6103 19.7301 36.5482 19.6333 36.4098C19.5375 36.2716 19.5375 36.1057 19.6354 36.0392C19.7325 35.9727 19.8869 36.0325 19.985 36.1697C20.0807 36.3104 20.0807 36.4763 19.9827 36.5441L19.9828 36.544ZM20.8754 37.5558C20.7897 37.6497 20.6071 37.6246 20.4734 37.4962C20.3367 37.3708 20.2986 37.1928 20.3846 37.0988C20.4713 37.0046 20.655 37.031 20.7897 37.1583C20.9255 37.2835 20.967 37.4628 20.8756 37.5558H20.8754ZM22.0291 37.8974C21.9915 38.0191 21.8155 38.0745 21.6384 38.0228C21.4615 37.9695 21.3457 37.8267 21.3814 37.7036C21.4182 37.581 21.5948 37.5233 21.7733 37.5787C21.95 37.6318 22.0661 37.7734 22.0293 37.8974H22.0291ZM23.3423 38.0422C23.3467 38.1705 23.1965 38.2769 23.0105 38.2792C22.8234 38.2833 22.6721 38.1794 22.6702 38.0533C22.6702 37.9237 22.817 37.8183 23.004 37.8153C23.19 37.8116 23.3423 37.9147 23.3423 38.0422ZM24.6322 37.993C24.6545 38.1182 24.5252 38.2468 24.3406 38.2809C24.159 38.3139 23.9909 38.2367 23.9678 38.1126C23.9452 37.9842 24.0769 37.8558 24.2581 37.8225C24.4431 37.7905 24.6086 37.8658 24.6322 37.993Z"
+                            fill="#161614" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Project Card 2 -->
+                  <div class="project-card" data-tilt>
+                    <div class="project-image">
+                      <img src="assets/img/booksepApp.png"
+                        alt="BookSep App" />
+                      <div class="project-overlay">
+                        <div class="project-tags">
+                          <span class="tag">HTML</span>
+                          <span class="tag">CSS</span>
+                          <span class="tag">JavaScript</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                      <h3>Booksep App</h3>
+                      <p>A simple CRUD application without database for managing book collections. With style glassmorphism.</p>
+                      <div class="project-links">
+                        <a
+                          href="https://booksep-app.netlify.app/"
+                          target="_blank" class="project-link-btn primary">
+                          <span>Live Demo</span>
+                          <svg width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                              stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                        <a href="https://github.com/Wissasono11/Bookshelf-App" class="project-link-btn secondary">
+                          <span>GitHub</span>
+                          <svg width="24" height="24" viewBox="0 0 57 56"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M28.4694 12.8284C19.8313 12.8284 12.8268 19.7928 12.8268 28.384C12.8268 35.257 17.3089 41.0879 23.5242 43.1448C24.3059 43.2888 24.593 42.8074 24.593 42.3965C24.593 42.0256 24.5784 40.8001 24.5718 39.5003C20.2199 40.4413 19.3016 37.665 19.3016 37.665C18.5901 35.8669 17.5648 35.3889 17.5648 35.3889C16.1456 34.4234 17.6718 34.4432 17.6718 34.4432C19.2426 34.553 20.0697 36.0463 20.0697 36.0463C21.4649 38.4244 23.7291 37.7368 24.6217 37.3395C24.762 36.3339 25.1675 35.6478 25.6148 35.2594C22.1405 34.8659 18.488 33.5321 18.488 27.5716C18.488 25.8734 19.0991 24.4857 20.0998 23.3963C19.9373 23.0045 19.402 21.4224 20.2513 19.2797C20.2513 19.2797 21.5648 18.8616 24.5541 20.8742C25.8018 20.5294 27.14 20.3567 28.4694 20.3508C29.7987 20.3567 31.1379 20.5294 32.3881 20.8742C35.3738 18.8616 36.6855 19.2797 36.6855 19.2797C37.5369 21.4224 37.0013 23.0045 36.8388 23.3963C37.8417 24.4857 38.4487 25.8733 38.4487 27.5716C38.4487 33.5462 34.7893 34.8619 31.3061 35.2469C31.8672 35.7297 32.3671 36.6764 32.3671 38.1276C32.3671 40.2089 32.3489 41.8841 32.3489 42.3965C32.3489 42.8104 32.6305 43.2955 33.4235 43.1428C39.6354 41.0835 44.1118 35.2547 44.1118 28.384C44.1118 19.7928 37.1082 12.8284 28.4694 12.8284Z"
+                              fill="#161614" />
+                              <path
+                              d="M18.6854 34.9878C18.6511 35.065 18.5287 35.0882 18.4174 35.0352C18.3039 34.9845 18.2401 34.8791 18.2769 34.8015C18.3107 34.7219 18.4331 34.6997 18.5463 34.7532C18.66 34.8038 18.7248 34.9102 18.6854 34.9878ZM19.4549 35.6705C19.3803 35.7393 19.2344 35.7073 19.1354 35.5986C19.0331 35.4902 19.014 35.3452 19.0897 35.2753C19.1666 35.2067 19.3081 35.2387 19.4106 35.3473C19.5129 35.457 19.5328 35.6011 19.4548 35.6706L19.4549 35.6705ZM19.9828 36.544C19.8869 36.6103 19.7301 36.5482 19.6333 36.4098C19.5375 36.2716 19.5375 36.1057 19.6354 36.0392C19.7325 35.9727 19.8869 36.0325 19.985 36.1697C20.0807 36.3104 20.0807 36.4763 19.9827 36.5441L19.9828 36.544ZM20.8754 37.5558C20.7897 37.6497 20.6071 37.6246 20.4734 37.4962C20.3367 37.3708 20.2986 37.1928 20.3846 37.0988C20.4713 37.0046 20.655 37.031 20.7897 37.1583C20.9255 37.2835 20.967 37.4628 20.8756 37.5558H20.8754ZM22.0291 37.8974C21.9915 38.0191 21.8155 38.0745 21.6384 38.0228C21.4615 37.9695 21.3457 37.8267 21.3814 37.7036C21.4182 37.581 21.5948 37.5233 21.7733 37.5787C21.95 37.6318 22.0661 37.7734 22.0293 37.8974H22.0291ZM23.3423 38.0422C23.3467 38.1705 23.1965 38.2769 23.0105 38.2792C22.8234 38.2833 22.6721 38.1794 22.6702 38.0533C22.6702 37.9237 22.817 37.8183 23.004 37.8153C23.19 37.8116 23.3423 37.9147 23.3423 38.0422ZM24.6322 37.993C24.6545 38.1182 24.5252 38.2468 24.3406 38.2809C24.159 38.3139 23.9909 38.2367 23.9678 38.1126C23.9452 37.9842 24.0769 37.8558 24.2581 37.8225C24.4431 37.7905 24.6086 37.8658 24.6322 37.993Z"
+                              fill="#161614" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- Project Card 2 -->
+                <div class="project-card" data-tilt>
+                  <div class="project-image">
+                    <img src="assets/img/kenanganSenja.png"
+                      alt="Kopi Kenangan Senja" />
+                    <div class="project-overlay">
+                      <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Kopi Kenangan Senja</h3>
+                    <p>A responsive coffee shop website built with HTML, CSS,
+                      and JavaScript featuring modern design and mobile
+                      optimization.</p>
+                    <div class="project-links">
+                      <a
+                        href="https://wissasono11.github.io/kopi-kenangan-senja/"
+                        target="_blank" class="project-link-btn primary">
+                        <span>Live Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="#" class="project-link-btn secondary">
+                        <span>GitHub</span>
+                        <svg width="24" height="24" viewBox="0 0 57 56"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.4694 12.8284C19.8313 12.8284 12.8268 19.7928 12.8268 28.384C12.8268 35.257 17.3089 41.0879 23.5242 43.1448C24.3059 43.2888 24.593 42.8074 24.593 42.3965C24.593 42.0256 24.5784 40.8001 24.5718 39.5003C20.2199 40.4413 19.3016 37.665 19.3016 37.665C18.5901 35.8669 17.5648 35.3889 17.5648 35.3889C16.1456 34.4234 17.6718 34.4432 17.6718 34.4432C19.2426 34.553 20.0697 36.0463 20.0697 36.0463C21.4649 38.4244 23.7291 37.7368 24.6217 37.3395C24.762 36.3339 25.1675 35.6478 25.6148 35.2594C22.1405 34.8659 18.488 33.5321 18.488 27.5716C18.488 25.8734 19.0991 24.4857 20.0998 23.3963C19.9373 23.0045 19.402 21.4224 20.2513 19.2797C20.2513 19.2797 21.5648 18.8616 24.5541 20.8742C25.8018 20.5294 27.14 20.3567 28.4694 20.3508C29.7987 20.3567 31.1379 20.5294 32.3881 20.8742C35.3738 18.8616 36.6855 19.2797 36.6855 19.2797C37.5369 21.4224 37.0013 23.0045 36.8388 23.3963C37.8417 24.4857 38.4487 25.8733 38.4487 27.5716C38.4487 33.5462 34.7893 34.8619 31.3061 35.2469C31.8672 35.7297 32.3671 36.6764 32.3671 38.1276C32.3671 40.2089 32.3489 41.8841 32.3489 42.3965C32.3489 42.8104 32.6305 43.2955 33.4235 43.1428C39.6354 41.0835 44.1118 35.2547 44.1118 28.384C44.1118 19.7928 37.1082 12.8284 28.4694 12.8284Z"
+                            fill="#161614" />
+                            <path
+                            d="M18.6854 34.9878C18.6511 35.065 18.5287 35.0882 18.4174 35.0352C18.3039 34.9845 18.2401 34.8791 18.2769 34.8015C18.3107 34.7219 18.4331 34.6997 18.5463 34.7532C18.66 34.8038 18.7248 34.9102 18.6854 34.9878ZM19.4549 35.6705C19.3803 35.7393 19.2344 35.7073 19.1354 35.5986C19.0331 35.4902 19.014 35.3452 19.0897 35.2753C19.1666 35.2067 19.3081 35.2387 19.4106 35.3473C19.5129 35.457 19.5328 35.6011 19.4548 35.6706L19.4549 35.6705ZM19.9828 36.544C19.8869 36.6103 19.7301 36.5482 19.6333 36.4098C19.5375 36.2716 19.5375 36.1057 19.6354 36.0392C19.7325 35.9727 19.8869 36.0325 19.985 36.1697C20.0807 36.3104 20.0807 36.4763 19.9827 36.5441L19.9828 36.544ZM20.8754 37.5558C20.7897 37.6497 20.6071 37.6246 20.4734 37.4962C20.3367 37.3708 20.2986 37.1928 20.3846 37.0988C20.4713 37.0046 20.655 37.031 20.7897 37.1583C20.9255 37.2835 20.967 37.4628 20.8756 37.5558H20.8754ZM22.0291 37.8974C21.9915 38.0191 21.8155 38.0745 21.6384 38.0228C21.4615 37.9695 21.3457 37.8267 21.3814 37.7036C21.4182 37.581 21.5948 37.5233 21.7733 37.5787C21.95 37.6318 22.0661 37.7734 22.0293 37.8974H22.0291ZM23.3423 38.0422C23.3467 38.1705 23.1965 38.2769 23.0105 38.2792C22.8234 38.2833 22.6721 38.1794 22.6702 38.0533C22.6702 37.9237 22.817 37.8183 23.004 37.8153C23.19 37.8116 23.3423 37.9147 23.3423 38.0422ZM24.6322 37.993C24.6545 38.1182 24.5252 38.2468 24.3406 38.2809C24.159 38.3139 23.9909 38.2367 23.9678 38.1126C23.9452 37.9842 24.0769 37.8558 24.2581 37.8225C24.4431 37.7905 24.6086 37.8658 24.6322 37.993Z"
+                            fill="#161614" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Project Card 3 -->
+                <div class="project-card" data-tilt>
+                  <div class="project-image">
+                    <img src="assets/img/tasksep.png"
+                      alt="Urplann Productivity App" />
+                    <div class="project-overlay">
+                      <div class="project-tags">
+                        <span class="tag">Figma</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Tasksep.</h3>
+                    <p>Productivity website with task management, in one app
+                      (plan, priotize, done).</p>
+                    <div class="project-links">
+                      <a
+                        href="https://www.figma.com/proto/AYSRPBuBlyIkIchH33UdSr/Tasksep.?node-id=1-2302&t=diyAbB8SOZGxCJNp-1"
+                        target="_blank" class="project-link-btn primary">
+                        <span>Live Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-tilt>
+                  <div class="project-image">
+                    <img src="assets/img/sukaCanteen.png"
+                      alt="SukaCanteen Landing Page" />
+                    <div class="project-overlay">
+                      <div class="project-tags">
+                        <span class="tag">Figma</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>SUKA-Canteen</h3>
+                    <p>Modern landing page design for a canteen service with
+                      clean UI and smooth user experience.</p>
+                    <div class="project-links">
+                      <a href="https://github.com/Wissasono11/kopi-kenangan-senja" class="project-link-btn primary">
+                        <span>Live Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                  <div class="project-image">
+                    <img
+                      src="assets/img/bandungHerritage.png"
+                      alt="Bandung Historical Project" />
+                    <div class="project-overlay">
+                      <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Responsive</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h3>Bandung Heritage</h3>
+                    <p>Historical information website about Bandung's iconic
+                      buildings with responsive design and rich cultural
+                      content.</p>
+                    <div class="project-links">
+                      <a href="https://wissasono11.github.io/Bandung-Project/"
+                        target="_blank" class="project-link-btn primary">
+                        <span>Live Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                      <a href="https://github.com/Wissasono11/Bandung-Project" class="project-link-btn secondary">
+                        <span>GitHub</span>
+                        <svg width="24" height="24" viewBox="0 0 57 56"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.4694 12.8284C19.8313 12.8284 12.8268 19.7928 12.8268 28.384C12.8268 35.257 17.3089 41.0879 23.5242 43.1448C24.3059 43.2888 24.593 42.8074 24.593 42.3965C24.593 42.0256 24.5784 40.8001 24.5718 39.5003C20.2199 40.4413 19.3016 37.665 19.3016 37.665C18.5901 35.8669 17.5648 35.3889 17.5648 35.3889C16.1456 34.4234 17.6718 34.4432 17.6718 34.4432C19.2426 34.553 20.0697 36.0463 20.0697 36.0463C21.4649 38.4244 23.7291 37.7368 24.6217 37.3395C24.762 36.3339 25.1675 35.6478 25.6148 35.2594C22.1405 34.8659 18.488 33.5321 18.488 27.5716C18.488 25.8734 19.0991 24.4857 20.0998 23.3963C19.9373 23.0045 19.402 21.4224 20.2513 19.2797C20.2513 19.2797 21.5648 18.8616 24.5541 20.8742C25.8018 20.5294 27.14 20.3567 28.4694 20.3508C29.7987 20.3567 31.1379 20.5294 32.3881 20.8742C35.3738 18.8616 36.6855 19.2797 36.6855 19.2797C37.5369 21.4224 37.0013 23.0045 36.8388 23.3963C37.8417 24.4857 38.4487 25.8733 38.4487 27.5716C38.4487 33.5462 34.7893 34.8619 31.3061 35.2469C31.8672 35.7297 32.3671 36.6764 32.3671 38.1276C32.3671 40.2089 32.3489 41.8841 32.3489 42.3965C32.3489 42.8104 32.6305 43.2955 33.4235 43.1428C39.6354 41.0835 44.1118 35.2547 44.1118 28.384C44.1118 19.7928 37.1082 12.8284 28.4694 12.8284Z"
+                            fill="#161614" />
+                          <path
+                            d="M18.6854 34.9878C18.6511 35.065 18.5287 35.0882 18.4174 35.0352C18.3039 34.9845 18.2401 34.8791 18.2769 34.8015C18.3107 34.7219 18.4331 34.6997 18.5463 34.7532C18.66 34.8038 18.7248 34.9102 18.6854 34.9878ZM19.4549 35.6705C19.3803 35.7393 19.2344 35.7073 19.1354 35.5986C19.0331 35.4902 19.014 35.3452 19.0897 35.2753C19.1666 35.2067 19.3081 35.2387 19.4106 35.3473C19.5129 35.457 19.5328 35.6011 19.4548 35.6706L19.4549 35.6705ZM19.9828 36.544C19.8869 36.6103 19.7301 36.5482 19.6333 36.4098C19.5375 36.2716 19.5375 36.1057 19.6354 36.0392C19.7325 35.9727 19.8869 36.0325 19.985 36.1697C20.0807 36.3104 20.0807 36.4763 19.9827 36.5441L19.9828 36.544ZM20.8754 37.5558C20.7897 37.6497 20.6071 37.6246 20.4734 37.4962C20.3367 37.3708 20.2986 37.1928 20.3846 37.0988C20.4713 37.0046 20.655 37.031 20.7897 37.1583C20.9255 37.2835 20.967 37.4628 20.8756 37.5558H20.8754ZM22.0291 37.8974C21.9915 38.0191 21.8155 38.0745 21.6384 38.0228C21.4615 37.9695 21.3457 37.8267 21.3814 37.7036C21.4182 37.581 21.5948 37.5233 21.7733 37.5787C21.95 37.6318 22.0661 37.7734 22.0293 37.8974H22.0291ZM23.3423 38.0422C23.3467 38.1705 23.1965 38.2769 23.0105 38.2792C22.8234 38.2833 22.6721 38.1794 22.6702 38.0533C22.6702 37.9237 22.817 37.8183 23.004 37.8153C23.19 37.8116 23.3423 37.9147 23.3423 38.0422ZM24.6322 37.993C24.6545 38.1182 24.5252 38.2468 24.3406 38.2809C24.159 38.3139 23.9909 38.2367 23.9678 38.1126C23.9452 37.9842 24.0769 37.8558 24.2581 37.8225C24.4431 37.7905 24.6086 37.8658 24.6322 37.993Z"
+                            fill="#161614" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </article>
-        </article>
+
+            <button class="projects-nav-btn projects-next-btn"
+              onclick="slideProjects('next')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Slider Indicators -->
+          <div class="projects-indicators">
+            <button class="indicator active" onclick="goToSlide(0)"></button>
+            <button class="indicator" onclick="goToSlide(1)"></button>
+            <button class="indicator" onclick="goToSlide(2)"></button>
+            <button class="indicator" onclick="goToSlide(3)"></button>
+          </div>
+        </div>
       </section>
 
       <!-- My Certificate -->
       <section class="certificate" id="certificate">
-        <article class="certificate-header">
-          <h2>My Certificate</h2>
-          <p>Here are some of the certifications I have achieved:</p>
-        </article>
+        <div class="certificate-background-overlay"></div>
+        
+        <!-- Floating Decorative Objects -->
+        <div class="certificate-floating-object certificate-floating-object-1"></div>
+        <div class="certificate-floating-object certificate-floating-object-2"></div>
+        <div class="certificate-floating-object certificate-floating-object-3"></div>
+        <div class="certificate-floating-object certificate-floating-object-4"></div>
+        <div class="certificate-floating-object certificate-floating-object-5"></div>
+        <div class="certificate-floating-object certificate-floating-object-6"></div>
+        <div class="certificate-floating-object certificate-floating-object-7"></div>
+        <div class="certificate-floating-object certificate-floating-object-8"></div>
+        
+        <div class="certificate-container-wrapper">
+          <div class="certificate-header">
+            <h2>My <span class="certificate-highlight">Certificates</span></h2>
+            <p>Professional certifications and achievements that showcase my expertise and continuous learning</p>
+          </div>
 
-        <article class="certificate-container">
-          <article class="certificate-item">
-            <a href="https://www.codepolitan.com/c/V5PF0ES/" target="_blank">
-              <img alt="Certificate 1" src="assets/img/sertifikat1.png" />
-            </a>
-            <p>Belajar Bootstrap CSS Framework</p>
-          </article>
+          <!-- Certificate Slider Container -->
+          <div class="certificate-slider-wrapper">
+            <!-- Navigation Buttons -->
+            <button class="certificate-nav-btn certificate-prev-btn" onclick="slideCertificates('prev')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
 
-          <article class="certificate-item">
-            <a href="https://www.codepolitan.com/c/B3QKSQG/" target="_blank">
-              <img alt="Certificate 2" src="assets/img/sertifikat2.png" />
-            </a>
-            <p>Belajar Dasar CSS</p>
-          </article>
+            <div class="certificate-slider-container">
+              <div class="certificate-slider" id="certificateSlider">
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="https://www.codepolitan.com/c/V5PF0ES/" target="_blank">
+                        <img alt="Bootstrap CSS Framework Certificate" src="assets/img/sertifikat1.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Bootstrap CSS Framework</h3>
+                      <p>Mastering responsive web design with Bootstrap CSS framework for modern web development</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <article class="certificate-item">
-            <a href="https://www.codepolitan.com/c/IICUHMS/" target="_blank">
-              <img alt="Certificate 3" src="assets/img/sertifikat4.png" />
-            </a>
-            <p>Membuat Halaman Website Portofolio Menggunakan Tailwind CSS</p>
-          </article>
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="https://www.codepolitan.com/c/B3QKSQG/" target="_blank">
+                        <img alt="CSS Fundamentals Certificate" src="assets/img/sertifikat2.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>CSS Fundamentals</h3>
+                      <p>Comprehensive understanding of CSS styling, layouts, and modern web design principles</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <article class="certificate-item">
-            <a href="https://www.codepolitan.com/c/1VOGJ7T/" target="_blank">
-              <img alt="Certificate 4" src="assets/img/sertifikat3.png" />
-            </a>
-            <p>Belajar Dasar HTML</p>
-          </article>
-        </article>
-      </section>
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="https://www.codepolitan.com/c/IICUHMS/" target="_blank">
+                        <img alt="Tailwind CSS Portfolio Certificate" src="assets/img/sertifikat4.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Tailwind CSS Portfolio</h3>
+                      <p>Building professional portfolio websites using Tailwind CSS utility-first framework</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-      <!-- contact us -->
-      <section>
-        <article class="banner-contact">
-          <img alt="BannerContact" src="assets/img/BannerContact.png" />
-          <div class="contact-text">
-            <h2>Lets Build Something Impactful Together</h2>
-            <button class="btn-primary">
-              <a
-                class="btn"
-                href="https://api.whatsapp.com/send/?phone=%2B6285252171114&amp;text&amp;type=phone_number&amp;app_absent=0"
-                target="_blank"
-              >
-                Send a Message
-              </a>
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="https://www.codepolitan.com/c/1VOGJ7T/" target="_blank">
+                        <img alt="HTML Fundamentals Certificate" src="assets/img/sertifikat3.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>HTML Fundamentals</h3>
+                      <p>Solid foundation in HTML structure, semantics, and modern web standards</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="#" target="_blank">
+                        <img alt="JavaScript Fundamentals Certificate" src="assets/img/sertifikat5.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>JavaScript Fundamentals</h3>
+                      <p>Comprehensive understanding of JavaScript programming and modern ES6+ features</p>
+                      <div class="certificate-badge">
+                        <span>Dicoding</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="#" target="_blank">
+                        <img alt="React Development Certificate" src="assets/img/sertifikat6.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Frontend Developer For Beginners</h3>
+                      <p>Build some project with study case Bookshelf App Using, HTML, CSS, JavaScript</p>
+                      <div class="certificate-badge">
+                        <span>Dicoding</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="#" target="_blank">
+                        <img alt="Frontend Developer" src="assets/img/sertifikat7.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Learn Basic Knowledge From Web Programming</h3>
+                      <p>Introduction to learn HTML, CSS, and SEO</p>
+                      <div class="certificate-badge">
+                        <span>Dicoding</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="#" target="_blank">
+                        <img alt="Web Performance Optimization Certificate" src="assets/img/sertifikat8.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Learn Basic To Use Git</h3>
+                      <p>Introduction to version control with Git, including basic commands and workflows</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="certificate-card" data-tilt>
+                  <div class="certificate-card-inner">
+                    <div class="certificate-image-container">
+                      <a href="#" target="_blank">
+                        <img alt="Full Stack Development Certificate" src="assets/img/sertifikat9.png" />
+                        <div class="certificate-overlay">
+                          <div class="certificate-view-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="certificate-content">
+                      <h3>Learn Continued To Use Git</h3>
+                      <p>Advanced Git concepts, branching strategies, and collaboration workflows</p>
+                      <div class="certificate-badge">
+                        <span>Codepolitan</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="certificate-nav-btn certificate-next-btn" onclick="slideCertificates('next')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </button>
           </div>
-        </article>
+
+          <!-- Certificate Slider Indicators -->
+          <div class="certificate-indicators">
+            <button class="certificate-indicator active" onclick="goToCertificateSlide(0)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(1)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(2)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(3)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(4)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(5)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(6)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(7)"></button>
+            <button class="certificate-indicator" onclick="goToCertificateSlide(8)"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact seciton -->
+      <section id="contact">
+        <div class="contact-container">
+          <div class="contact-content">
+            <h2>Have an Awesome Project Idea? <span class="contact-highlight">Let's Discuss</span></h2>
+            <div class="contact-form">
+              <div class="email-input-container">
+                <div class="email-icon"><img src="assets/svg/mailicon.svg" alt="">
+                </div>
+                <input type="email" placeholder="Enter Email Address" id="emailInput" required>
+                <button class="send-btn" onclick="handleContactForm()">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- footer -->
+    <!-- footer section -->
     <footer>
-      <p>Portoasep Copyright © 2025 All Rights Reserved.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/img/AV.png" alt="Asep Verstappen" class="footer-logo">
+          <h3>Asep <span>Verstappen</span></h3>
+          <p>Frontend Developer passionate about creating beautiful and functional web experiences.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#certificate">Certificates</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Landing Pages</a></li>
+              <li><a href="#services">Frontend Consulting</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Connect With Me</h4>
+            <div class="social-links">
+              <a href="https://api.whatsapp.com/send/?phone=%2B6285252171114&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                </svg>
+              </a>
+              <a href="https://github.com/Wissasono11" target="_blank" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="mailto:bayuwicaksono782@example.com" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 Asep Verstappen. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- script js -->
-    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
